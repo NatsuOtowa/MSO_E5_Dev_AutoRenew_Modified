@@ -6,14 +6,11 @@ on:
   release:
     types: [published]
   push:
-    tags:
-    - 'v*'
-  #  branches: 
-  #    - master
-  #  schedule:
-  #    - cron: '0 0/3 * * *'
-  watch:
-    types: [started]
+    branches: 
+      - main
+#  schedule:
+#    - cron: '0 0/3 * * *'
+  workflow_dispatch:
    
 jobs:
   build:
